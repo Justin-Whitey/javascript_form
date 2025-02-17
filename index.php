@@ -5,7 +5,7 @@
 	
 	<body style="background-color: black; color: #FFF;">
 		<h1> tara shabu </h1>
-		<table id="student_table">
+		<table id="student_table" border="1">
 		</table>
 		
 		<script>
@@ -48,6 +48,14 @@
 			
 			row3col1.append(inputSubmit);
 			
-			</script>
+			const studentForm = document.createElement("form");
+			studentForm.append(studentTable);
+			studentForm.action="create.php";
+			studentForm.method="POST";
+			
+			body = document.getElementsByTagName("body")[0];
+			body.append(studentForm);
+			
+		</script>
 	</body>
 </html>
