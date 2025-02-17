@@ -29,19 +29,20 @@
 			const inputLastName = document.createElement("input");
 			inputLastName.type="text";
 			inputLastName.placeholder="Insert Last Name";
-			
+			inputLastName.name="last_name";
 			row2col1.append(inputLastName);
 			
 			const inputFirstName = document.createElement("input");
 			inputFirstName.type="text";
 			inputFirstName.placeholder="Insert First Name";
-			
+			inputFirstName.name="first_name";
 			row2col2.append(inputFirstName);
 			
 			const row3 = studentTable.insertRow();
 			const row3col1 = row3.insertCell();
 			row3col1.colSpan="2";
 			
+			<!-- Submit -->
 			const inputSubmit = document.createElement("input");
 			inputSubmit.type="submit";
 			inputSubmit.value="Create Record"
